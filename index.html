@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bluehot Migrator Plugin Guide</title>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/bluehost.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/bluehost.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <!-- Fonts CSS-->
+    <link rel="stylesheet" href="css/heading.css">
+    <link rel="stylesheet" href="css/body.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+        <div class="container"><img style="max-height: 40px; max-width: 40px;" src="assets/img/BHimages/logowhite.png"
+                alt=""></i><a class="navbar-brand js-scroll-trigger" href="#page-top">Bluehost Migrator Plugin</a>
+            <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#portfolio">Requirements</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#about">Migration Steps</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+                            href="#contact">Troubleshooting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/BHimages/logopng2.png"
+                alt="">
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading mb-0">Bluehost Migrator Plugin</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+            </div>
+            <!-- Masthead Subheading
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Maximize your daily workflow with these steps!</p>-->
+        </div>
+    </header>
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- First Main Heading-->
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">Requirements</h2>
+                </div>
+                <div class="text-center"></div>
+                <div style="min-width: 100% !important; padding-top: 40px;" class="row">
+                    <div style=" width:50% !important; display:inline-block !important;">
+                        <p style="height: 10px;" class="pre-wrap lead">
+                        <ul>
+                            <li>The combined size of the site files must be under 2G
+                                <!--<a href="https://www.google.com/url?q=https://docs.google.com/spreadsheets/d/1IwFMbkI6YOv3Oc6ri7NxTyF4Lkq5I0dEuRuRA24XgN0/edit%23gid%3D2023501805&amp;sa=D&amp;ust=1588863628038000"target="_blank">tracking sheet</a></li>-->
+                            <li>The database for the site must be under 20M</li>
+                            <li>WordPress version 4.7 or higher</li>
+                            <li>PHP version 7.0 or higher</li>
+                            <li>Must not be a multisite</li>
+                            <li>Must have enough available disk space to store the backup</li>
+                            <li>The destination account cannot be a VPS or Dedicated account</li>
+                            <li>30 day limit does not apply</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div
+                        style="background-image: url('assets/img/BHimages/laptop-wp-663.png'); background-position: 50%; background-size: contain; background-repeat: no-repeat; width:50% !important; display:inline-block !important;">
+                        <p class="pre-wrap lead">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divider-custom divider-light">
+        </div>
+        <div style="margin-bottom: 50px;" class="divider-custom divider-light">
+        </div>
+        </div>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">Migration Steps</h2>
+                </div>
+                <section class="page-section portfolio" id="portfolio">
+                    <div class="container">
+                        <!-- First Main Heading-->
+                        <div class="container">
+                            <!-- Portfolio Grid Items-->
+                            <div class="row">
+                                <!-- Portfolio Items-->
+                                <div style=" text-align: center;" class="col-md-5 col-lg-4 mb-5">
+                                    <h3>Checking Site Compatibility</h3>
+                                </div>
+                                <div style=" text-align: center;" class="col-md-5 col-lg-4 mb-5">
+                                    <h3>Installation</h3>
+                                </div>
+                                <div style=" text-align: center;" class="col-md-5 col-lg-4 mb-5">
+                                    <h3>Running the Migration</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Portfolio Items-->
+                                <div class="col-md-5 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal"
+                                        data-target="#portfolioModal0">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div><img class="img-fluid" src="assets/img/icons/bluecheck.png"
+                                            alt="Log Cabin" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal"
+                                        data-target="#portfolioModal1">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div><img class="img-fluid" src="assets/img/icons/plugins.jpg"
+                                            alt="Tasty Cake" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-lg-4 mb-5">
+                                    <div class="portfolio-item mx-auto" data-toggle="modal"
+                                        data-target="#portfolioModal2">
+                                        <div
+                                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                                    class="fas fa-plus fa-3x"></i></div>
+                                        </div><img class="img-fluid" src="assets/img/icons/blueclock.png"
+                                            alt="Circus Tent" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- Portfolio Modal-->
+                <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog"
+                    aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-11">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary mb-0">Checking Site
+                                                Compatibility</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <div class="slidercontainer">
+                                                <div class="showSlide sliderfade">
+                                                    <img src="assets/img/compatibility/Screenshot1.png" />
+                                                    <div style="text-align: left;" class="slidercontent">1. Click
+                                                        Marketplace on the left hand main menu.</div>
+                                                </div>
+                                                <div class="showSlide sliderfade">
+                                                    <img src="assets/img/compatibility/Screenshot2.png" />
+                                                    <div style="text-align: left;" class="slidercontent">2. Select "Pro
+                                                        Services" from the left handsub menu, then click the "Site
+                                                        Migration" square.</div>
+                                                </div>
+                                                <div class="showSlide sliderfade">
+                                                    <img src="assets/img/compatibility/Screenshot3.png" />
+                                                    <div style="text-align: left;" class="slidercontent">3. Agree to the
+                                                        terms and select "Get Started Now" under "Free"</div>
+                                                </div>
+                                                <div class="showSlide sliderfade">
+                                                    <img src="assets/img/compatibility/Screenshot4.png" />
+                                                    <div class="slidercontent">
+                                                        <p style="text-align: left;">4. Type your domain name into the
+                                                            entry field, then click on the link to log into wordpress.
+                                                        </p>
+                                                        <p style="text-align: left;">5. Log out of Bluehost.</p>
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                                <!-- Navigation arrows -->
+                                                <a class="sliderleft" onclick="nextSlide(-1)">❮</a>
+                                                <a class="sliderright" onclick="nextSlide(1)">❯</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+                    aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-11">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary mb-0">Install and Activate
+                                                the Plugin</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <div class="slider2container">
+                                                <div class="showSlide2 slider2fade">
+                                                    <img src="assets/img/Installation/Screenshot6.png" />
+                                                    <div style="text-align: left;" class="slider2content">1. Log into
+                                                        your WordPress Dashboard, click "Plugins". then "Add New".</div>
+                                                </div>
+                                                <div class="showSlide2 slider2fade">
+                                                    <img src="assets/img/Installation/Screenshot7.png" />
+                                                    <div style="text-align: left;" class="slider2content">2. In the top
+                                                        right search bar type "Bluehost Site Migrator", then click
+                                                        "Install Now", then click "Activate".</div>
+                                                </div>
+                                                <div class="showSlide2 slider2fade">
+                                                    <img src="assets/img/Installation/Screenshot9.png" />
+                                                    <div style="text-align: left;" class="slider2content">3. Click on
+                                                        the Plugin menu item on the left hand menu.</div>
+                                                </div>
+                                                <div class="showSlide2 slider2fade">
+                                                    <img src="assets/img/Installation/Screenshot8.png" />
+                                                    <div style="text-align: left;" class="slider2content">4. You can
+                                                        also download the plugin <u><a target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                href="https://wordpress.org/plugins/bluehost-site-migrator/">here</a></u>
+                                                        and install manually.</div>
+                                                </div>
+                                                <!-- Navigation arrows -->
+                                                <a class="slider2left" onclick="nextSlide2(-1)">❮</a>
+                                                <a class="slider2right" onclick="nextSlide2(1)">❯</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+                    aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                            <div class="modal-body text-center">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-11">
+                                            <!-- Portfolio Modal - Title-->
+                                            <h2 class="portfolio-modal-title text-secondary mb-0">Run the Migration</h2>
+                                            <!-- Icon Divider-->
+                                            <div class="divider-custom">
+                                                <div class="divider-custom-line"></div>
+                                            </div>
+                                            <div class="slidercontainer3">
+                                                <div class="showSlide3 slider3fade">
+                                                    <img src="assets/img/Transfer/Screenshot10.png" />
+                                                    <div style="text-align: left;" class="slider3content">1. Click
+                                                        "Check Compatibility".</div>
+                                                </div>
+                                                <div class="showSlide3 slider3fade">
+                                                    <img src="assets/img/Transfer/Screenshot11.png" />
+                                                    <div style="text-align: left;" class="slider3content">2. Click
+                                                        "Start Transfer".</div>
+                                                </div>
+                                                <div class="showSlide3 slider3fade">
+                                                    <img src="assets/img/Transfer/Screenshot12.png" />
+                                                    <div style="text-align: left;" class="slider3content">3. Click
+                                                        "Login to Bluehost".</div>
+                                                </div>
+                                                <div class="showSlide3 slider3fade">
+                                                    <img src="assets/img/Transfer/Screenshot13.png" />
+                                                    <div style="text-align: left;" class="slider3content">4. Log into
+                                                        the account that you're migrating the site to.</div>
+                                                </div>
+                                                <!-- Navigation arrows -->
+                                                <a class="slider3left" onclick="nextSlide3(-1)">❮</a>
+                                                <a class="slider3right" onclick="nextSlide3(1)">❯</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">Troubleshooting</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Content-->
+                <div style="padding-top: 30px;" class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="d-flex flex-column align-items-center">
+                            <p>If you run into any errors during the migration process, here are some troubleshooting
+                                steps and causes.</p>
+                            <br>
+                            <ul>
+                                <li>If the message "Looks like we're not compatible" shows before logging into the
+                                    WordPress adminstrator area, either the site is not wordpress or a CDN is blocking
+                                    our compatibility checker, in which case you may continue with the process. Please
+                                    keep in mind that this only checks to see if the site is a WordPress site, not any
+                                    of the other factors that can impact if the site can be migrated using the plugin.
+                                </li>
+                                <br>
+                                <li>If you are unable to install the plugin, there are several things to look at.
+                                    <ol>
+                                        <li>You may be out of disk space on your current hosting platform.</li>
+                                        <li>Your current host may be limiting which plugins you are allowed to intall on
+                                            your site.</li>
+                                        <li>Your WordPress version may be too old.</li>
+                                        <li>The PHP version of your site may not be up to date.</li>
+                                    </ol>
+                                </li>
+                                <br>
+                                <li>If you receive an error after installing the plugin while running the compatibility
+                                    check, there are a few reasons for this to fail.
+                                    <ol>
+                                        <li>Your site files exceed 2G</li>
+                                        <li>Your database size is over 20M</li>
+                                        <li>Your WordPress version is too old</li>
+                                        <li>Your PHP version is too old</li>
+                                        <li>Your directory structure is unconventional</li>
+                                        <li>You are running a multisite installation</li>
+                                        <li>Your current server is too slow to connect with ours and will not transfer
+                                            the backup files.</li>
+                                    </ol>
+                                </li>
+                                <br>
+                                <li>If you receive an error after clicking "Start Transfer", here are some reasons as to
+                                    why that may happen.</li>
+                                <ol>
+                                    <li>Your directory structure is unconventional.</li>
+                                    <li>You are out of disk space on your current server and backups couldn't be made of
+                                        your site.</li>
+                                </ol>
+                                <br>
+                                <li>If everything is successful and your site isn't transferred within several business
+                                    days, the final link stating "Login to Bluehost" may not have been clicked.
+                                    Additionally, if you weren't logged out of all Bluehost accounts prrior to clicking
+                                    the link, the migration may be assigned to an incorrect account.</li>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap"></small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed"><a
+                class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
+                    class="fa fa-chevron-up"></i></a></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+</body>
+
+</html>
